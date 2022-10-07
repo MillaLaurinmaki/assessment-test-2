@@ -1,13 +1,14 @@
 {
   "name": "price-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "```npm install```",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel ",
     "build": "parcel build"
   },
-  "author": "",
+  "type": "module",
+  "author": "Milla Laurinmäki",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.23.0",
@@ -20,5 +21,6 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.34.2",
     "react-router-dom": "^6.3.0"
-  }
+  },
+  "main": ".eslintrc.js"
 }
