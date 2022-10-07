@@ -1,19 +1,20 @@
 function calculateTotal(items) {
+  console.log(items);
   let totalPrice = 0;
   for (const item of items) {
-    totalPrice += item.price;
+    totalPrice += Number(item.price);
   }
   return totalPrice;
 }
-calculateTotal();
 
-// Takes a list of fruit objects as arguments
-// eg. [{'name': 'Banana', 'price': 1}, {'name': 'Apple', 'price': 2}]
-// Should return the cart average.
 function calculateAvg(items) {
-  const average = totalPrice / items.price.length;
+  let totalPrice = 0;
+  for (const item of items) {
+    totalPrice += Number(item.price);
+  }
+  const average = totalPrice / items.length;
+  console.log(average);
   return average;
 }
-calculateAvg();
 
 export { calculateTotal, calculateAvg };
